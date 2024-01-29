@@ -22,15 +22,15 @@ The [Node.js website](https://nodejs.org/en/about/) declares:
 
 This is a definition that requires a little unpacking.
 
-The important bit to understand right up front is that Node is a "JavaScript runtime". When JavaScript was first created, it was designed to run _in the browser_. This means that it was impossible to use JavaScript to write any kind of program that was not a website. Node brings JavaScript _out_ of browser-land. This allows developers to use JavaScript to accomplish pretty much anything that other popular server-side languages such as Ruby, PHP, C# and Python can do. So, at its most basic level, Node simply allows you to run JavaScript code on a machine such as your local computer or a server without having to go through a web browser.
+The important bit to understand right up front is that Node is a "JavaScript runtime". When JavaScript was first created, it was designed to run _in the browser_. This means that it was impossible to use JavaScript to write any kind of program that was not a website. Node brings JavaScript _out_ of browser-land. This allows developers to use JavaScript to accomplish pretty much anything that other popular server-side languages such as Ruby, PHP, C#, and Python can do. So, at its most basic level, Node simply allows you to run JavaScript code on a machine such as your local computer or a server without having to go through a web browser.
 
-To facilitate this, Node has some added functionality that is not found in browser-based JavaScript, such as the ability to read and write local files, create http connections and listen to network requests.
+To facilitate this, Node has some added functionality that is not found in browser-based JavaScript, such as the ability to read and write local files, create HTTP connections, and listen to network requests.
 
 ### Event driven
 
-Back to the definition from Node's website: Node is an **asynchronous event driven** JavaScript runtime. In this context **asynchronous** means that when you write your code you do not try to predict the exact sequence in which every line will run. Instead you write your code as a collection of smaller functions that get called in response to specific events such as a network request (**event driven**).
+Back to the definition from Node's website: Node is an **asynchronous event driven** JavaScript runtime. In this context **asynchronous** means that when you write your code you do not try to predict the exact sequence in which every line will run. Instead, you write your code as a collection of smaller functions that get called in response to specific events such as a network request (**event driven**).
 
-For example, let's say you are writing a program and you need it to do the following. It should read some text from a file, print that text to the console, query a database for a list of users and filter the users based on their age.
+For example, let's say you are writing a program and you need it to do the following. It should read some text from a file, print that text to the console, query a database for a list of users, and filter the users based on their age.
 
 Instead of telling your code to do those steps sequentially like so:
 
@@ -59,7 +59,7 @@ http.createServer(function (req, res) {
 }).listen(8080);
 ```
 
-This snippet is from the very first lesson in a tutorial that you'll be following very soon. Basically this code is creating a server and saying, "any time we get a network request, run this callback function". This function happens to respond with the text 'Hello World!'. So if you go to a browser and navigate to the correct address and port, you would see that text on your screen.
+This snippet is from the very first lesson in a tutorial that you'll be following very soon. Basically, this code is creating a server and saying, "any time we get a network request, run this callback function". This function happens to respond with the text 'Hello World!'. So if you go to a browser and navigate to the correct address and port, you will see that text on your screen.
 
 ### A word of advice
 
